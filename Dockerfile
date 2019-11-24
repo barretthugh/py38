@@ -1,4 +1,4 @@
-FROM python:3.8.0-slim
+FROM python:3.8.0-buster
 
 COPY requirement.txt /requirement.txt
 # for mirrors in China
