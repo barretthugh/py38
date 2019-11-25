@@ -1,0 +1,6 @@
+SQLAlchemy
+psycopg2-binary
+pytdx
+tables
+cn_stock_holidays
+matplotlib
