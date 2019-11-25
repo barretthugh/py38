@@ -1,7 +1,10 @@
 FROM barretthugh/py38
 
-COPY requirement.txt /requirement.txt
-COPY jupyter_notebook_config.py /root/.jupyter/
+COPY jupyter/requirement.txt /requirement.txt
+COPY jupyter/jupyter_notebook_config.py /root/.jupyter/
+# for mirrors in China
+# COPY jupyter/source.list /etc/apt/sources.list
+# COPY jupyter/pip.conf /root/.pip/pip.conf
 
 RUN apt-get update \
   && pip install -r /requirement.txt \
