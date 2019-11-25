@@ -16,6 +16,7 @@ RUN apt-get update \
   && apt-get install -y nodejs \
   && npm --unsafe-perm i -g ijavascript \
   && ijsinstall --install=global \
+  && npm init -f \
   && npm i d3 crossfilter2 dc jquery melt highcharts \
   && rm -rf /var/cache/*
 
