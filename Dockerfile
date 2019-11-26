@@ -26,7 +26,6 @@ RUN set -ex \
         libssl-dev \
         libffi-dev \
         libpq-dev \
-        git \
     ' \
     && apt-get update -yqq \
     && apt-get upgrade -yqq \
