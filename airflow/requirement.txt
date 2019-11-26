@@ -4,3 +4,5 @@ pytdx
 tables
 cn_stock_holidays
 matplotlib
+redis
+Tushare

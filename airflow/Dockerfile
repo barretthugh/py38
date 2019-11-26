@@ -18,16 +18,10 @@ COPY script/entrypoint.sh /entrypoint.sh
 RUN apt-get update \
     && useradd -ms /bin/bash -d ${AIRFLOW_HOME} airflow \
     && pip install apache-airflow[crypto,ssh${AIRFLOW_DEPS:+,}${AIRFLOW_DEPS}]==${AIRFLOW_VERSION} \
-    && pip install redis \
     && if [ -n "${PYTHON_DEPS}" ]; then pip install ${PYTHON_DEPS}; fi \
     && pip install -r /requirement.txt \
     && pip install Tushare \
     && chmod +x /entrypoint.sh
-
-
-COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
-
-RUN chown -R airflow: ${AIRFLOW_HOME}
 
 
 COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
