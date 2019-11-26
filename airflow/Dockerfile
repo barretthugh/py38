@@ -8,7 +8,6 @@ ARG PYTHON_DEPS=""
 ENV AIRFLOW_HOME=${AIRFLOW_USER_HOME}
 
 COPY airflow/requirement.txt /requirement.txt
-COPY airflow/jupyter_notebook_config.py /root/.jupyter/
 # for mirrors in China
 # COPY airflow/source.list /etc/apt/sources.list
 # COPY airflow/pip.conf /root/.pip/pip.conf
