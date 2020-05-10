@@ -13,3 +13,7 @@ xlrd
 chardet
 itsdangerous
 protobuf
+aiohttp
+aioredis
+asyncpg
+redis
