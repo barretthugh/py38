@@ -1,4 +1,3 @@
-pytdx
 widgetsnbextension
 webencodings
 tqdm

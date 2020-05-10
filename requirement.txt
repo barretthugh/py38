@@ -17,3 +17,4 @@ aiohttp
 aioredis
 asyncpg
 redis
+pytdx
