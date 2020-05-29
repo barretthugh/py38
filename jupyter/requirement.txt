@@ -1,6 +1,7 @@
 widgetsnbextension
 webencodings
 tqdm
+pivottablejs
 traitlets
 unidecode
 testpath
