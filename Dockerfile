@@ -55,7 +55,7 @@ RUN set -ex \
     && curl "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb?src=0&filename=google-chrome-stable_current_amd64.deb" -o /chrome.deb \
     && dpkg -i /chrome.deb || apt-get install -yf \
     && rm /chrome.deb \
-    && curl https://chromedriver.storage.googleapis.com/81.0.4044.138/chromedriver_linux64.zip -o /usr/local/bin/chromedriver.zip \
+    && curl https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_linux64.zip -o /usr/local/bin/chromedriver.zip \
     && unzip /usr/local/bin/chromedriver.zip -d /usr/local/bin/ \
     && chmod +x /usr/local/bin/chromedriver \
     && rm /usr/local/bin/chromedriver.zip \
