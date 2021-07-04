@@ -7,8 +7,6 @@ unidecode
 testpath
 SQLAlchemy
 psycopg2-binary
-qtconsole
-tables
 statsmodels
 vincent
 patsy
