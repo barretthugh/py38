@@ -7,17 +7,13 @@ COPY jupyter/jupyter_notebook_config.py /root/.jupyter/
 # COPY jupyter/pip.conf /root/.pip/pip.conf
 
 RUN apt-get update \
+  && apt install -yqq libpq-dev \
   && pip install -r /requirement.txt \
   && pip install Tushare \
   && pip uninstall prompt_toolkit -y \
   && pip install prompt-toolkit==2.0.10 \
   && jupyter nbextension enable --py widgetsnbextension \
   && jupyter serverextension enable --py jupyterlab \
-  && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
-  && apt-get install -y nodejs \
-  && npm --unsafe-perm i -g ijavascript \
-  && ijsinstall --install=global \
-  && npm i d3 crossfilter2 dc jquery melt highcharts \
   && rm -rf /var/cache/*
 
 WORKDIR "/"
