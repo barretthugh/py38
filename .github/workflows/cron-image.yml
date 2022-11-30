@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: cron Image CI
 
 on:
   push:
