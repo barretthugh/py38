@@ -47,4 +47,3 @@ click
 bleach
 astor
 absl-py
-pandas-ta
